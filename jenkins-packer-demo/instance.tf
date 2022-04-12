@@ -19,7 +19,6 @@ data "aws_ami" "rhel" {
 
 resource "aws_instance" "jenkins-instance" {
  #ami           = data.aws_ami.ubuntu.id
- #ami           = "ami-0b28dfc7adc325ef4" 
   ami           = "ami-0b28dfc7adc325ef4" 
   instance_type = "t2.micro"
 
