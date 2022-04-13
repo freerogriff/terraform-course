@@ -20,7 +20,7 @@ variable "JENKINS_VERSION" {
 
 variable "TERRAFORM_VERSION" {
 #  default = "0.12.23"
-  default = "1.1.7"
+  default = "1.1.8"
 }
 
 variable "APP_INSTANCE_COUNT" {

@@ -49,7 +49,7 @@ aws --version
 #wget -q https://releases.hashicorp.com/terraform/${TERRAFORM_VERSION}/terraform_${TERRAFORM_VERSION}_linux_amd64.zip \
 #&& unzip -o terraform_${TERRAFORM_VERSION}_linux_amd64.zip -d /usr/local/bin \
 #&& rm terraform_${TERRAFORM_VERSION}_linux_amd64.zip
-curl -L https://releases.hashicorp.com/terraform/1.1.7/terraform_1.1.7_linux_amd64.zip | sudo bsdtar -vxf - -C /usr/local/bin/
+curl -L https://releases.hashicorp.com/terraform/1.1.8/terraform_1.1.8_linux_amd64.zip | sudo bsdtar -vxf - -C /usr/local/bin/
 chmod a+x /usr/local/bin/terraform
 # install packer
 cd /usr/local/bin
