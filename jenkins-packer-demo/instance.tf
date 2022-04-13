@@ -56,7 +56,8 @@ resource "aws_volume_attachment" "jenkins-data-attachment" {
 
 resource "aws_instance" "app-instance" {
   count         = var.APP_INSTANCE_COUNT
-  ami           = var.APP_INSTANCE_AMI
+  #ami           = var.APP_INSTANCE_AMI
+  ami           = "ami-0b28dfc7adc325ef4" 
   instance_type = "t2.micro"
 
   # the VPC subnet
