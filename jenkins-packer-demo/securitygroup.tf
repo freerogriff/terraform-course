@@ -27,7 +27,7 @@ resource "aws_security_group" "jenkins-securitygroup" {
 }
 
 resource "aws_security_group" "app-securitygroup" {
-  vpc_id      = aws_default_vpc.main.id
+  vpc_id      = aws_vpc.main.id
   name        = "app-securitygroup"
   description = "security group that allows ssh and all egress traffic"
   egress {
